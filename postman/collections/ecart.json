@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "4899a8ef-55c5-45c8-b4e9-f6a1d88c30f7",
+		"name": "ecart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "14836914-4899a8ef-55c5-45c8-b4e9-f6a1d88c30f7"
+	},
+	"item": [
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "create product",
+					"id": "ac82643d-bca2-4ed6-8283-f6fae6f9e256",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"OPPO F21s Pro 5G\",\r\n        \"price\": 245.67,\r\n        \"description\": \"OPPO F21s Pro 5G is a powerful device with a RAM extension feature, that offers brilliant operational speed to users.\",\r\n        \"ratings\": 4.5,\r\n        \"images\": [\r\n            {\r\n                \"image\": \"/images/products/1.jpg\"\r\n            },\r\n            {\r\n                \"image\": \"/images/products/2.jpg\"\r\n            }\r\n        ],\r\n        \"category\": \"Mobile Phones\",\r\n        \"seller\": \"Amazon\",\r\n        \"stock\": 5,\r\n        \"numOfReviews\": 15,\r\n        \"reviews\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/product/new",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"new"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "8e2d52b0-b839-460e-b8ef-142bab6c1337"
+		},
+		{
+			"name": "users",
+			"item": [],
+			"id": "ad3bc698-8bbc-4af1-b44f-7f46724d4c16"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1ad56c5c-a9d4-4134-a9c0-0bc552d63aa4",
+				"type": "text/javascript",
+				"exec": [
+					"",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9e279d2f-f9fc-4334-81df-1fa58097d8c0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
