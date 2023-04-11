@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "64329eecc363767baf69adfe"
+  },
+  "email": "kameshjeeva30@gmail.com",
+  "password": "$2b$10$C7f2HkNuzonfzlURi4oRkuHDBjI0bFORxZyfrRpfsArvVzHfSf6Pi",
+  "createdAt": {
+    "$date": "2023-04-09T11:18:04.244Z"
+  }
+},{
+  "_id": {
+    "$oid": "6432a1119b3b18e825ff66c7"
+  },
+  "email": "kameshjeeva@gmail.com",
+  "password": "$2b$10$cAWvefGt1zOIbJutTlkkNeyG0Y/WdmJ1ZsJlQzOSB0WrOkHYEQ0k2",
+  "createdAt": {
+    "$date": "2023-04-09T11:27:13.179Z"
+  }
+},{
+  "_id": {
+    "$oid": "6432a216cb026044584f8360"
+  },
+  "email": "kamesh@gmail.com",
+  "password": "$2b$10$XxHQyMvS4eLRDFDOCgb9m.LQBWViRycwHMjNNCC0U60kiOixbA1dG",
+  "createdAt": {
+    "$date": "2023-04-09T11:31:34.814Z"
+  }
+},{
+  "_id": {
+    "$oid": "6432a56d42f9607f64d0b6b7"
+  },
+  "email": "kameshs@gmail.com",
+  "password": "$2b$10$wLeBdzseveOdNwPvTqY2VuwETfD6SAKjRf/umTHe1l5/9eY3.Fw2K",
+  "avatar": "http://localhost:3002/uploads/user/Screenshot.png",
+  "createdAt": {
+    "$date": "2023-04-09T11:45:49.826Z"
+  }
+}]
