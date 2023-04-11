@@ -7,6 +7,7 @@ require("dotenv").config();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const { connectDB } = require("./config/database");
+const errorMiddleware = require("./middleware/error");
 const log = console.log;
 
 const app = express();
@@ -33,6 +34,8 @@ app.use((req, res, next) => {
 app.get("/api/secret", (req, res) => {
   res.send("The password is potato");
 });
+
+app.use(errorMiddleware);
 
 const PORT = 3002;
 
