@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
-  const uri = process.env.MONGO_URI;
+  const uri = "mongodb://127.0.0.1:27017/ecart";
 
   try {
     const conn = await mongoose.connect(uri, {

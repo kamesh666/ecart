@@ -18,8 +18,6 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 connectDB();
 
-module.exports = { connectDB };
-
 // Routers
 // authentication Routes
 app.use("/api", auth);
@@ -36,21 +34,8 @@ app.get("/api/secret", (req, res) => {
   res.send("The password is potato");
 });
 
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, DELETE, PATCH, OPTIONS"
-  );
-  next();
-});
-
 const PORT = 3002;
 
 app.listen(PORT, () => {
-  console.log(`example app running http://localhost:${PORT}`);
+  log(`example app running http://localhost:${PORT}`);
 });

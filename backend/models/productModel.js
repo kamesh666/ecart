@@ -39,6 +39,7 @@ const productSchema = new Schema({
         "Mobile Phones",
         "Accessories",
         "Headphones",
+        "Laptops",
         "Food",
         "Books",
         "Clothes/shoes",
