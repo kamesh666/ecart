@@ -67,6 +67,7 @@
 									]
 								}
 							},
+							"_postman_previewlanguage": "Text",
 							"cookie": []
 						}
 					]
@@ -81,13 +82,23 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/products",
+							"raw": "{{url}}/api/products?keyword=dell&category=Laptops",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"products"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "dell"
+								},
+								{
+									"key": "category",
+									"value": "Laptops"
+								}
 							]
 						}
 					},
