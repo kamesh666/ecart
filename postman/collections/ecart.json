@@ -39,6 +39,136 @@
 							]
 						}
 					},
+					"response": [
+						{
+							"id": "304d6616-f344-4b08-8eab-88caec3cb887",
+							"name": "create product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"OPPO F21s Pro 5G\",\r\n        \"price\": 245.67,\r\n        \"description\": \"OPPO F21s Pro 5G is a powerful device with a RAM extension feature, that offers brilliant operational speed to users.\",\r\n        \"ratings\": 4.5,\r\n        \"images\": [\r\n            {\r\n                \"image\": \"/images/products/1.jpg\"\r\n            },\r\n            {\r\n                \"image\": \"/images/products/2.jpg\"\r\n            }\r\n        ],\r\n        \"category\": \"Mobile Phones\",\r\n        \"seller\": \"Amazon\",\r\n        \"stock\": 5,\r\n        \"numOfReviews\": 15,\r\n        \"reviews\": []\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/product/new",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"product",
+										"new"
+									]
+								}
+							},
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Get All Products",
+					"id": "22ac5038-af13-4ac7-9482-17e6977f51aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSingleProduct",
+					"id": "943f82f1-a679-4437-9555-1b4549d44ff8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/product/643516d9541984bfc79cdfe6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"643516d9541984bfc79cdfe6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct",
+					"id": "85b8912c-c0e8-4493-849c-b3c0a5263dbb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"stock\": 44\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/product/643516d9541984bfc79cdfe6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"643516d9541984bfc79cdfe6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"id": "4b014eab-752b-41da-b75a-db17dd545976",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/product/643516d9541984bfc79cdfe6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"643516d9541984bfc79cdfe6"
+							]
+						}
+					},
 					"response": []
 				}
 			],
